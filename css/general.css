@@ -1,0 +1,81 @@
+:root{
+    --background: #F5F5F5;
+    --link: #000;
+    --main_title: #464646;
+    --main_alt_color: #fdfaef;
+    --box_background: #d4eefd;
+    --text_hover: brown;
+}
+html{
+     scroll-behavior: smooth;
+}
+body {
+     box-sizing: border-box;
+     background-color: var(--background) ;
+     font-family: 'Raleway';
+     margin: 0;
+     padding: 0;
+     line-height: 1;
+}
+ol, ul,li {
+     list-style: none;
+}
+a{
+     text-decoration: none;
+     color: var(--link);
+}
+
+section > h3{
+     color: var(--main_title);
+}
+
+.menu, .title, .about__container, .skills, .hobbies, .academic__container, .experience, .footer__rodape{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+.about__title, .skills__title, .hobbies__title, .academic__title, .experience__section__title{
+    font-size: 32px;
+    color: var(--main_title);
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+.about__title{
+    margin: 0 0 22px;
+    text-align: initial;
+}
+/*Up Arrow*/
+.arrow-up__container{
+    display: none;
+    position: fixed;
+    bottom: 35px;
+    right: 25px;
+    -webkit-tap-highlight-color: transparent; /*For mobile*/
+}
+.arrow-up__img{
+    padding: 12px;
+    width: 32px;
+    background-color: rgba(0, 0, 0, 0.120);
+    border: 2px solid black;
+    border-radius: 100%;
+    backdrop-filter: blur(8px);
+}
+.arrow-up__img:active{
+    background-color: rgba(139, 82, 82, 0.432);
+}
+
+/*footer*/
+.footer{
+    background-color: white;
+}
+
+.footer__rodape{
+    padding: 40px 0;
+    text-align: center;
+}
+.footer__rodape p{
+    margin: 0;
+}
+.footer__rodape p:first-child{
+    margin-bottom: 5px;
+}

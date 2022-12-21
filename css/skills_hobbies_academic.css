@@ -1,0 +1,103 @@
+/*Sección skills, Hobbies, Academic*/
+
+section.skills, section.hobbies{
+    padding: 15px 0;
+}
+section.hobbies{
+    margin-bottom: 50px;
+}
+.skills__line, .hobbies__line{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.skills__box, .hobbies__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: white;
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0.5px 0.5px 5px rgb(230, 230, 230), -0.5px -0.5px 5px rgb(230, 230, 230);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border: 1px solid white;
+    transition: 0.2s all;
+    transition: 0.5s transform;
+    /*will-change: transform;*/
+    color: #17284e;
+}
+.skills__box > ul, .hobbies__box > ul{
+    padding: 5px 20px;
+}
+.skills__box:hover, .hobbies__box:hover{
+    transform: scale(1.1);
+    background-color: var(--box_background);
+    border: 1px solid rgb(174, 240, 255);
+    color: #2655b9;
+}
+.skills__name, .hobbies__name{
+    margin-top: 10px;
+}
+.skills__name:hover, .hobbies__name:hover{
+    cursor: default;
+}
+
+section.academic{
+    padding: 40px 0;
+    background-color: var(--main_alt_color);
+}
+.academic__courses{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+.academic__courses__box{
+    width: 250px;
+    height: 320px;
+    box-sizing: border-box;
+}
+.academic__courses__list{
+    margin: 0;
+    padding-left: 0px;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 60% 15% 25%;
+    height: 100%;
+}
+.academic__courses__item__img{
+    display: flex;
+    justify-content: center;
+    grid-row: 1/2;
+    transition: 0.5s all;
+}
+.academic__courses__item__img:hover{
+    /*transform: rotate(-2deg);*/
+    transform: rotate3d(0,1,0,30deg);
+}
+.academic__courses__item__title{
+    color: var(--main_title);
+    font-size: 1.2rem;
+    text-align: center;
+}
+.academic__courses__item__title h4{
+    margin: 0;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    transform: translateY(5px);
+}
+
+#first_course{
+    transform: translateY(0px);
+}
+.academic__courses__item__subtitle{
+    text-align: center;
+    line-height: 1.3em;
+    color: var(--main_title);;
+}
+#alura{
+    background-color: white;
+    padding: 0 20px;
+}

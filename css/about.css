@@ -1,0 +1,20 @@
+/*Sección About*/
+
+section.about{
+    background-color: var(--main_alt_color);
+}
+.about__container{
+    padding: 50px 25px;
+}
+.about__title{
+    margin-bottom: 22px;
+}
+.about__paragraph{
+    max-width: 900px;
+    line-height: 1.4rem;
+    font-size: 18px;
+    color: var(--main_title);
+}
+.about__container img{
+    width: 100px;
+}

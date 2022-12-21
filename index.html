@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/title.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/skills_hobbies_academic.css">
+    <link rel="stylesheet" href="./css/experience.css">
+    <link rel="stylesheet" href="./css/query.css">
+    <title> Portafolio</title>
+</head>
+<body>
+    <div class="main-containers">
+        <section class="menu" id="home">
+            <header class="menu__header">
+                <img class="menu__nav-icon" src="assets/menu_icon.png" alt="menu-icon">
+                <img class="menu__star-icon" src="assets\vector.png">
+                <h3 class="menu__title">Nicolás Valdez</h3>
+            </header>
+            <nav class="nav">
+                <ul class="menu__list">
+                    <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
+                    <li class="menu__list__item"><a href="#skills">Habilidades</a></li>
+                    <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
+                    <li class="menu__list__item"><a href="#formacion">Formación</a></li>
+                    <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Sección del Header/Title/Hero -->
+        <section class="title">
+            <div class="title__div">
+                <img class="title__profile" src="assets\profile.png">
+                <div class="title__container">
+                    <h2 class="title__bio">Hola, mi nombre es Nicolás Valdez y soy desarrollador Full Stack trainee</h2>
+                    <h3 class="title__subsection">Actualmente me encuentro realizando el curso de Oracle ONE, y mi objetivo es poder ser capaz de desarrollar páginas web complejas y crear aplicaciones Android.</h3>
+                    <ul class="title__network">
+                        <li class="title__network__item"><a href="https://github.com/nicov90?tab=repositories" target="_blank">GitHub <img src="assets\arrow.png"> </a></li>
+                        <li class="title__network__item"><a href="https://www.linkedin.com/in/nicov90/" target="_blank">LinkedIn <img src="assets\arrow.png"></a></li>
+                        <li class="title__network__item"><a href="./files/Valdez Nicolas - Curriculum Vitae.pdf" target="_blank" download="CV - Valdez Nicolas">Currículum <img src="assets\arrow.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección sobre mi -->
+        <section class="about" id="sobre-mi">
+            <div class="about__container">
+                <h3 class="about__title">Sobre mi</h3>
+                <p class="about__paragraph">Soy estudiante de la carrera de Ingeniería en Sistemas de Información en la Universidad Técnologica Nacional (UTN). A lo largo del 2022 hasta la actualidad, me he estado capacitando de forma autodidacta y mediante cursos, con el objetivo de convertirme en un desarrollador Full Stack.</p>
+                <p class="about__paragraph">Estoy interesado en variadas herramientas y tecnologías que aún no he aprendido, como: Bootstrap, ReactJS, React Native, Flutter, Spring, Django, MongoDB, JQuery, TypeScript y Unity, por nombrar algunos... ya que realmente estoy dispuesto a aprender cualquier tecnología si la situación lo requiere.</p>
+                <!-- <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.  </p>
+                <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
+                -->
+                <img src="assets\signature.png">
+            </div>
+        </section>
+
+        <!-- Sección de Skills -->
+        <section class="skills" id="skills">
+            <h3 class="skills__title">Habilidades</h3>
+                <div class="skills__line">
+                    <div class="skills__box">
+                        <ul>
+                            <li class="skills__img"><img src="assets/html_icon.png" alt="Logo icons created by Freepik - Flaticon"></li>
+                            <li class="skills__name">HTML</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills__box">
+                        <ul>
+                            <li class="skills__img"> <img src="assets/css_icon.png" alt="Css icons created by Pixel perfect - Flaticon"> </li>
+                            <li class="skills__name">CSS</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills__box">
+                        <ul>
+                            <li class="skills__img"> <img src="assets/js_icon.png" alt="Javascript icons created by Freepik - Flaticon"></li>
+                            <li class="skills__name">JavaScript</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills__box">
+                        <ul>
+                            <li class="skills__img" id="mysql"> <img src="assets/mysql.png" alt="Mysql icon created by Freepik - Flaticon"></li>
+                            <li class="skills__name">MySQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills__box">
+                        <ul>
+                            <li class="skills__img"> <img src="assets/java_icon.png" alt="Java icons created by riajulislam - Flaticon"></li>
+                            <li class="skills__name">Java (Básico)</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills__box">
+                        <ul>
+                            <li class="skills__img"> <img src="assets/python_icon.png" alt="Python icons created by Freepik - Flaticon"></li>
+                            <li class="skills__name">Python (Básico)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Agregar a futuro
+                    <div class="skills__box">
+                        <ul>
+                            <li class="skills__img"><img src="assets/nodejs_icon.png" alt="NODE JS Icon"></li>
+                            <li class="skills__name">Node JS</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills__box">
+                        <ul>
+                            <li class="skills__img"> <img src="assets/react_icon.png" alt="React Icon"></li>
+                            <li class="skills__name">React</li>
+                        </ul>
+                    </div> -->
+            </div>
+        </section>
+
+        <!-- Sección de Hobbies -->
+        <section class="hobbies" id="hobbies">
+            <h3 class="hobbies__title">Hobbies</h3>
+            <div class="hobbies__line">
+                <div class="hobbies__box">
+                    <ul>
+                        <li class="hobbies__img"> <img src="assets\guitar_icon.png" alt=""></li>
+                        <li class="hobbies__name">Tocar guitarra</li>
+                    </ul>
+                </div>
+
+                <div class="hobbies__box">
+                    <ul>
+                        <li class="hobbies__img"> <img src="assets\headphones_icon.png" alt=""></li>
+                        <li class="hobbies__name">Oir música</li>
+                    </ul>
+                </div>
+
+                <div class="hobbies__box">
+                    <ul>
+                        <li class="hobbies__img"><img src="assets\tv_icon.png" alt=""></li>
+                        <li class="hobbies__name">Ver series</li>
+                    </ul>
+                </div>
+
+                <div class="hobbies__box">
+                    <ul>
+                        <li class="hobbies__img"> <img src="assets\camera_icon.png" alt=""> </li>
+                        <li class="hobbies__name">Tomar fotos</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+            <!-- Sección de Formación académica -->
+        <section class="academic" id="formacion">
+            <div class="academic__container">
+                <h2 class="academic__title" >Formación académica</h2>
+                <div class="academic__courses">
+                    <div class="academic__courses__box">
+                        <ul class="academic__courses__list">
+                            <li class="academic__courses__item__img"><img src="assets/highschool.png"></li>
+                            <li class="academic__courses__item__title"><h4 id="first_course">Técnico Mecánico</h4></li>
+                            <li class="academic__courses__item__subtitle"><p>2018 - ET N°9 D.E.7 <br>Ing. Luis A. Huergo</p></li>
+                        </ul>
+                    </div>
+                    <div class="academic__courses__box">
+                        <ul class="academic__courses__list">
+                            <li class="academic__courses__item__img"><img id="utn" src="assets/utn_icon.png"></li>
+                            <li class="academic__courses__item__title"><h4>Ingeniería en Sistemas de Información</h4></li>
+                            <li class="academic__courses__item__subtitle"><p>En curso - UTN.BA</p></li>
+                        </ul>
+                    </div>
+                    <div class="academic__courses__box">
+                        <ul class="academic__courses__list">
+                            <li class="academic__courses__item__img"><img id="codo-a-codo" src="assets/codo_a_codo.png"></li>
+                            <li class="academic__courses__item__title"><h4>Formación Full Stack en Python</h4></li>
+                            <li class="academic__courses__item__subtitle"><p>2022 - Codo a Codo 4.0</p></li>
+                        </ul>
+                    </div>
+                    <div class="academic__courses__box">
+                        <ul class="academic__courses__list">
+                            <li class="academic__courses__item__img"><img id="alura" src="assets/alura_logo.png"></li>
+                            <li class="academic__courses__item__title"><h4>Formación Full Stack en Java</h4></li>
+                            <li class="academic__courses__item__subtitle"><p>En curso - Oracle ONE / Alura</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Experiencia Profesional/Proyectos-->
+        <section class="experience" id="xp">
+            <h2 class="experience__section__title" >Experiencia / Proyectos</h2>
+
+            <div class="experience__box">
+                <img class="experience__img" src="assets/hangman-img.png">
+                <div class="experience__info">
+                    <h2 class="experience__title">Juego del Ahorcado</h2>
+                    <h3 class="experience__text">Desafio sugerido por Oracle/Alura</h3>
+                    <div class="experience__description">
+                        <span class="experience__repo"><a href="https://github.com/nicov90/Hangman"><button class="experience__button--repo">Repositorio</button></a></span>
+                        <span class="experience__demo"><a href="https://nicov90.github.io/Hangman/"><button class="experience__button--demo">Ver demo</button></a></span>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="experience__box">
+                <img class="experience__img" src="assets/encryptor-img.png">
+                <div class="experience__info">
+                    <h2 class="experience__title">Encriptador de texto</h2>
+                    <h3 class="experience__text">Desafio sugerido por Oracle/Alura</h3>
+                    <div class="experience__description">
+                        <span class="experience__repo"><a href="https://github.com/nicov90/Encryptor"><button class="experience__button--repo">Repositorio</button></a></span>
+                        <span class="experience__demo"><a href="https://nicov90.github.io/Encryptor/"><button class="experience__button--demo">Ver demo</button></a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="arrow-up__container">
+        <a href="#home"><img src="./assets/up-arrow.png" alt="Go up arrow" class="arrow-up__img"></a>
+    </div>
+    <!-- Sección de Footer -->
+    <footer class="footer">
+        <div class="footer__rodape">
+            <p>Made by Nicolas Valdez</p>
+            <p>2022</p>
+        </div>
+    </footer>
+    <script src="menu.js"></script>
+</body>
+</html>

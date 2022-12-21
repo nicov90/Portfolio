@@ -1,0 +1,60 @@
+/* Experiencia*/
+.experience{
+    padding: 40px 0;
+}
+.experience__section__title{
+    margin-bottom: 60px;
+}
+.experience__box{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin: 0 20px 50px 20px;
+}
+.experience__box:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.experience__img{
+    width: 700px;
+}
+.experience__title{
+    color: var(--main_title);
+    margin: 0;
+    font-size: 25px;
+}
+.experience__text{
+    margin: 12px 0;
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--main_title);
+}
+.experience__description{
+    margin-top: 15px;
+}
+.experience__button--repo, .experience__button--demo{
+    padding: 15px;
+    font-family: inherit;
+    font-size: 15px;
+    border-radius: 2px;
+    transition: 0.2s all;
+}
+.experience__button--repo:hover, .experience__button--demo:hover{
+    cursor: pointer;
+}
+.experience__button--repo:hover{
+    background-color: #fff9f9;
+}
+.experience__button--demo:hover{
+    background-color: rgb(27, 99, 255);
+}
+.experience__button--repo{
+    background-color: transparent;
+    color: rgb(44, 93, 255);
+    border: 1px solid rgb(44, 93, 255);
+    margin-right: 8px;
+}
+.experience__button--demo{
+    background-color: rgb(68, 127, 255);
+    color: #eff4ff;
+    border: 1px solid rgb(63, 124, 255);
+}
