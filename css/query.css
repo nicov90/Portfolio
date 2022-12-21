@@ -17,8 +17,9 @@
     .about__title{
         font-size: 28px;
     }
-    .experience__img{
+    .experience__img__container{
         width: 600px;
+        height: 392px;
     }
 }
 @media screen and (max-width: 940px){
@@ -159,8 +160,9 @@
     .skills__line, .hobbies__line{
         padding: 0 25px;
     }
-    .experience__img{
+    .experience__img__container{
         width: 100vw;
+        height: 65vw;
         max-width: 600px;
     }
 }
