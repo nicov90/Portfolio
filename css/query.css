@@ -127,6 +127,9 @@
 }
 
 @media (max-width: 768px) {
+    .menu > *{
+        animation: none;
+    }
     .arrow-up__container{
         display: block;
     }
@@ -136,6 +139,15 @@
     .nav{
         width: 95%;
         display: none;
+        animation: opacity 0.4s ease-in-out;
+    }
+    @keyframes opacity {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
     }
     .menu__header{
         margin-bottom: 25px;

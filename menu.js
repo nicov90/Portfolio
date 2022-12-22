@@ -10,13 +10,17 @@ menuIcon.addEventListener("click", ()=>{
     const check = JSON.parse(sessionStorage.getItem("tasks"));
     if(!check){
         navBar.style.display = "block";
-        menuHeader.style.justifyContent = "center";
-        menuHeader.style.marginLeft = "0";
+        if(window.innerWidth <= 425){
+            menuHeader.style.justifyContent = "center";
+            menuHeader.style.marginLeft = "0";
+        }
         sessionStorage.setItem("tasks", JSON.stringify(true));
     }else{
         navBar.style.display = "none";
-        menuHeader.style.justifyContent = "flex-start";
-        menuHeader.style.marginLeft = "50px";
+        if(window.innerWidth <= 425){
+            menuHeader.style.justifyContent = "flex-start";
+            menuHeader.style.marginLeft = "50px";
+        }
         sessionStorage.setItem("tasks", JSON.stringify(false));
     }
 })

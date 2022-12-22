@@ -44,6 +44,9 @@ section > h3{
     margin: 0 0 22px;
     text-align: initial;
 }
+.title__div, .about__container, .menu > *{
+    animation: move 0.5s linear;
+}
 /*Up Arrow*/
 .arrow-up__container{
     display: none;
@@ -55,13 +58,13 @@ section > h3{
 .arrow-up__img{
     padding: 12px;
     width: 32px;
-    background-color: rgba(0, 0, 0, 0.120);
+    background-color: rgba(255, 255, 255, 0.05);
     border: 2px solid black;
     border-radius: 100%;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
 }
 .arrow-up__img:active{
-    background-color: rgba(139, 82, 82, 0.432);
+    background-color: rgba(238, 190, 178, 0.4);
 }
 
 /*footer*/

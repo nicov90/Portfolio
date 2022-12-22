@@ -73,7 +73,6 @@ section.academic{
     transition: 0.5s all;
 }
 .academic__courses__item__img:hover{
-    /*transform: rotate(-2deg);*/
     transform: rotate3d(0,1,0,20deg);
 }
 .academic__courses__item__title{
