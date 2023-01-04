@@ -47,6 +47,16 @@ section > h3{
 .title__div, .about__container, .menu > *{
     animation: move 0.5s linear;
 }
+@keyframes move {
+    from{
+        transform: translateX(-50px);
+        opacity: 0.2;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
 /*Up Arrow*/
 .arrow-up__container{
     display: none;
