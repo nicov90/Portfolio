@@ -47,19 +47,30 @@
 .experience__img__container:focus .experience__img::before{
     display: block;
 }
+#converter{
+    background-image: url("../assets/converter-img.png");
+}
+#ecommerce{
+    background-image: url("../assets/ecommerce-img.png");
+}
 #hangman{
     background-image: url("../assets/hangman-img.png");
 }
 #encryptor{
     background-image: url("../assets/encryptor-img.png");
 }
+.experience__info{
+    max-width: 350px;
+}
 .experience__title{
     color: var(--main_title);
     margin: 0;
     font-size: 25px;
+    line-height: 35px;
 }
 .experience__text{
-    margin: 12px 0;
+    line-height: 20px;
+    margin: 12px 0 12px;
     font-size: 1em;
     font-weight: 500;
     color: var(--main_title);
@@ -93,4 +104,32 @@
     background-color: rgb(68, 127, 255);
     color: #eff4ff;
     border: 1px solid rgb(63, 124, 255);
+}
+.not-available{
+    background-color: rgb(70, 70, 70);
+    border: 1px solid black;
+    position: relative;
+}
+.not-available:hover{
+    background-color: rgb(70, 70, 70);
+    cursor: not-allowed;
+}
+.not-available:hover{
+    background-color: rgb(55, 55, 55);
+}
+.not-available:focus:after{
+    content: "No disponible";
+    font-size: 0.85em;
+    line-height: 50px;
+    text-align: center;
+    width: 98px;
+    height: 48px;
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    background-clip: border-box;
+    background-color: rgb(35,35,35);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
