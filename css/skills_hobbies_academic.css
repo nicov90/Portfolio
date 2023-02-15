@@ -40,6 +40,7 @@ section.hobbies{
 }
 .skills__name, .hobbies__name{
     margin-top: 10px;
+    line-height: 1.1em;
 }
 .skills__name:hover, .hobbies__name:hover{
     cursor: default;
