@@ -177,6 +177,13 @@
         height: 65vw;
         max-width: 600px;
     }
+    
+}
+@media (max-width: 768px) and (min-width: 600px){
+    #hotel-management-system{
+        background-size: auto;
+        background-position-x: -290px;
+    }
 }
 
 @media (max-width: 425px) {
