@@ -16,6 +16,9 @@ body {
      padding: 0;
      line-height: 1;
 }
+p{
+    margin: 0;
+}
 ol, ul,li {
      list-style: none;
 }
@@ -28,7 +31,7 @@ section > h3{
      color: var(--main_title);
 }
 
-.menu, .title, .about__container, .skills, .hobbies, .academic__container, .experience, .footer__rodape{
+.menu, .title, .about__container, .skills, .hobbies, .academic__container, .experience, .footer__rodape, .contact{
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 25px;
