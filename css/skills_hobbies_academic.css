@@ -24,19 +24,17 @@ section.hobbies{
     font-weight: bold;
     letter-spacing: 0.5px;
     border: 1px solid white;
-    transition: 0.2s all;
-    transition: 0.5s transform;
-    /*will-change: transform;*/
+    transition: 0.2s all ease-in;
     color: #17284e;
 }
 .skills__box > ul, .hobbies__box > ul{
     padding: 5px 20px;
 }
 .skills__box:hover, .hobbies__box:hover{
-    transform: scale(1.1);
-    background-color: var(--box_background);
-    border: 1px solid rgb(174, 240, 255);
-    color: #2655b9;
+    transform: scale(1.05);
+    background-color: #3d505c;
+    border: 1px solid transparent;
+    color: #ffffff;
 }
 .skills__name, .hobbies__name{
     margin-top: 10px;
