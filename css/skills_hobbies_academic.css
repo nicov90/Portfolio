@@ -36,6 +36,9 @@ section.hobbies{
     border: 1px solid transparent;
     color: #ffffff;
 }
+#oracle-cloud{
+    margin-left: -8px;
+}
 .skills__name, .hobbies__name{
     margin-top: 10px;
     line-height: 1.1em;
