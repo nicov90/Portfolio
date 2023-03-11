@@ -48,6 +48,9 @@
 .experience__img__container:focus .experience__img::before{
     display: block;
 }
+#calculadora-react{
+    background-image: url("../assets/calculadora-react.png");
+}
 #hotel-management-system{
     background-image: url("../assets/hotel-management-img.png");
 }
