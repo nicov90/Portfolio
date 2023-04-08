@@ -48,6 +48,9 @@
 .experience__img__container:focus .experience__img::before{
     display: block;
 }
+#task-list{
+    background-image: url("../assets/task-list-img.png");
+}
 #calculadora-react{
     background-image: url("../assets/calculadora-react.png");
 }
