@@ -54,7 +54,8 @@ section.academic{
 .academic__courses{
     display: flex;
     justify-content: space-evenly;
-    gap: 5px;
+    column-gap: 22px;
+    flex-wrap: wrap;
 }
 .academic__courses__box{
     width: 250px;
