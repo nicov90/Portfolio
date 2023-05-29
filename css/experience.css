@@ -48,6 +48,10 @@
 .experience__img__container:focus .experience__img::before{
     display: block;
 }
+#pokedex-app{
+    background-image: url("../assets/pokedex-icon.png");
+    background-size: contain;
+}
 #task-list{
     background-image: url("../assets/task-list-img.png");
 }
