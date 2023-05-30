@@ -170,7 +170,17 @@
         margin-top: 12px;
     }
     .skills__line, .hobbies__line{
-        padding: 0 25px;
+        padding: 0 15px;
+    }
+    .skills__box, .hobbies__box{
+        width: 175px;
+        height: 175px;
+    }
+    .skills__img > img{
+        transform: scale(0.9);
+    }
+    .skills__name, .hobbies__name{
+        font-size: 1rem;
     }
     .experience__img__container{
         width: 100vw;
@@ -210,6 +220,16 @@
     .title__network{
         align-items: center;
         flex-direction: column;
+    }
+    .skills__box, .hobbies__box{
+        width: 125px;
+        height: 125px;
+    }
+    .skills__line{
+        row-gap: 30px;
+    }
+    .skills__name, .hobbies__name{
+        font-size: 0.9rem;
     }
     .academic__courses__box{
         width: 100%;
