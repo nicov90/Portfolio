@@ -3,6 +3,7 @@ const navBar = document.querySelector(".nav");
 const menuIcon = document.querySelector(".menu__nav-icon");
 const menuActive = false;
 const arrowUp = document.querySelector(".arrow-up__container");
+const newPortfolio = document.querySelector("#new-portfolio");
 
 sessionStorage.setItem("tasks", JSON.stringify(menuActive));
 
