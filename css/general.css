@@ -49,6 +49,12 @@ section > h3{
 .title__div, .about__container, .menu > *{
     animation: move 0.5s linear;
 }
+.newportfolio{
+    margin: 15px 0; 
+    color: white; 
+    font-size: 15px;
+}
+
 @keyframes move {
     from{
         transform: translateX(-50px);

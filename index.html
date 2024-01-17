@@ -21,37 +21,40 @@
 <body>
     <div class="main-containers">
         <div id="new-portfolio" style="display: flex; justify-content: center; align-items: center; background-color: rgba(0, 0, 0, 0.75); padding: 5px 0;">
-            <p style="margin: 15px 0; color: white; font-size: 15px;">Nuevo portafolio en desarrollo...</p>
+            <p class="newportfolio" style="margin: 15px 0; color: white; font-size: 15px;" id="new-portfolio-title">Nuevo portafolio en desarrollo...</p>
             <a hidden style="margin-left: 10px; padding: 10px; background-color: white; border-radius: 20px; font-size: 15px;" href="" target="_blank">Entrar</a>
         </div>
-        <section class="menu" id="home">
+        <section class="menu" id="home" style="display: flex; align-items: center;">
             <header class="menu__header">
                 <img class="menu__nav-icon" src="assets/menu_icon.png" alt="menu-icon">
                 <img class="menu__star-icon" src="assets\vector.png">
-                <h3 class="menu__title">Portafolio</h3>
+                <h3 class="menu__title" id="portfolio">Portafolio</h3>
             </header>
             <nav class="nav">
                 <ul class="menu__list">
-                    <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-                    <li class="menu__list__item"><a href="#skills">Habilidades</a></li>
+                    <li class="menu__list__item" id="menu__list__item_sobre-mi"><a href="#sobre-mi">Sobre mi</a></li>
+                    <li class="menu__list__item" id="skills"><a href="#skills">Habilidades</a></li>
                     <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                    <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                    <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
+                    <li class="menu__list__item" id="menu__list__item_formacion"><a href="#formacion">Formación</a></li>
+                    <li class="menu__list__item" id="menu__list__item_proyectos"><a href="#xp">Proyectos</a></li>
                 </ul>
             </nav>
+            <select id="language-selector" style="padding: 5px;" onchange="changeLanguage()">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+            </select>
         </section>
 
-        <!-- Sección del Header/Title/Hero -->
         <section class="title">
             <div class="title__div">
                 <img class="title__profile" src="assets\profile.png">
                 <div class="title__container">
-                    <h2 class="title__bio">Hola, mi nombre es Nicolás Valdez y soy desarrollador Web</h2>
-                    <h3 class="title__subsection">Actualmente estoy aprendiendo Azure, y mi objetivo es poder ser capaz de desarrollar páginas web complejas y crear aplicaciones Android.</h3>
+                    <h2 class="title__bio" id="main-title">Hola, mi nombre es Nicolás Valdez y soy desarrollador Full Stack</h2>
+                    <h3 class="title__subsection" id="sub-title">Actualmente me encuentro trabajando como desarrollador en Grupo Tepsi utilizando Next.js, TypeScript, ASP.NET API y SQL Server como herramientas principales</h3>
                     <ul class="title__network">
                         <li class="title__network__item"><a href="https://github.com/nicov90?tab=repositories" target="_blank">GitHub <img src="assets\arrow.png"> </a></li>
                         <li class="title__network__item"><a href="https://www.linkedin.com/in/nicov90/" target="_blank">LinkedIn <img src="assets\arrow.png"></a></li>
-                        <li class="title__network__item"><a href="./files/Valdez Nicolas - Desarrollador Full Stack CV.pdf" target="_blank" download="Valdez Nicolas - Desarrollador Full Stack CV">Currículum <img src="assets\arrow.png"></a></li>
+                        <li class="title__network__item"><a href="./files/Valdez Nicolas - Full Stack Developer Resume.pdf" target="_blank" download="Valdez Nicolas - Full Stack Developer Resume">Currículum <img src="assets\arrow.png"></a></li>
                     </ul>
                 </div>
             </div>
@@ -60,16 +63,16 @@
         <!-- Sección sobre mi -->
         <section class="about" id="sobre-mi">
             <div class="about__container">
-                <h3 class="about__title">Sobre mi</h3>
-                <p class="about__paragraph">Soy estudiante de la carrera de Ingeniería en Sistemas de Información en la Universidad Tecnológica Nacional (UTN). A lo largo del 2022 hasta la actualidad, me he estado capacitando de forma autodidacta y mediante cursos, con el objetivo de convertirme en un desarrollador Full Stack.</p>
-                <p class="about__paragraph">Estoy interesado en variadas herramientas y tecnologías que aún no he aprendido, como: Kotlin, Flutter, Spring, JQuery, AWS, Azure y Docker por nombrar algunos... ya que realmente estoy dispuesto a aprender cualquier tecnología si la situación lo requiere.</p>
+                <h3 class="about__title" id="about_me">Sobre mi</h3>
+                <p class="about__paragraph" id="about_paragraph">Soy estudiante de la carrera de Ingeniería en Sistemas de Información en la Universidad Tecnológica Nacional (UTN). A lo largo del 2022 hasta la actualidad, me he estado capacitando de forma autodidacta y mediante cursos, con el objetivo de convertirme en un desarrollador Full Stack.</p>
+                <p class="about__paragraph" id="about_paragraph2">Estoy interesado en variadas herramientas y tecnologías que aún no he aprendido, como: Kotlin, Flutter, Spring, JQuery, AWS, Azure y Docker por nombrar algunos... ya que realmente estoy dispuesto a aprender cualquier tecnología si la situación lo requiere.</p>
                 <img src="assets\signature.png">
             </div>
         </section>
 
         <!-- Sección de Skills -->
         <section class="skills" id="skills">
-            <h3 class="skills__title">Habilidades</h3>
+            <h3 class="skills__title" id="skills2">Habilidades</h3>
                 <div class="skills__line">
                     <div class="skills__box">
                         <ul>
@@ -215,28 +218,28 @@
                 <div class="hobbies__box">
                     <ul>
                         <li class="hobbies__img"> <img src="assets\guitar_icon.png" alt=""></li>
-                        <li class="hobbies__name">Tocar guitarra</li>
+                        <li class="hobbies__name" id="guitar">Tocar guitarra</li>
                     </ul>
                 </div>
 
                 <div class="hobbies__box">
                     <ul>
                         <li class="hobbies__img"> <img src="assets\headphones_icon.png" alt=""></li>
-                        <li class="hobbies__name">Oir música</li>
+                        <li class="hobbies__name" id="music">Oir música</li>
                     </ul>
                 </div>
 
                 <div class="hobbies__box">
                     <ul>
                         <li class="hobbies__img"><img src="assets\tv_icon.png" alt=""></li>
-                        <li class="hobbies__name">Ver series</li>
+                        <li class="hobbies__name" id="series">Ver series</li>
                     </ul>
                 </div>
 
                 <div class="hobbies__box">
                     <ul>
                         <li class="hobbies__img"> <img src="assets\camera_icon.png" alt=""> </li>
-                        <li class="hobbies__name">Tomar fotos</li>
+                        <li class="hobbies__name" id="photos">Tomar fotos</li>
                     </ul>
                 </div>
             </div>
@@ -245,41 +248,41 @@
             <!-- Sección de Formación académica -->
         <section class="academic" id="formacion">
             <div class="academic__container">
-                <h2 class="academic__title" >Formación académica</h2>
+                <h2 class="academic__title" id="formacion_title">Formación académica</h2>
                 <div class="academic__courses">
                     <div class="academic__courses__box">
                         <ul class="academic__courses__list">
                             <li class="academic__courses__item__img"><img src="assets/highschool.png"></li>
-                            <li class="academic__courses__item__title"><h4 id="first_course">Técnico Mecánico</h4></li>
-                            <li class="academic__courses__item__subtitle"><p>2018 - ET N°9 D.E.7 <br>Ing. Luis A. Huergo</p></li>
+                            <li class="academic__courses__item__title" id="highschool_title"><h4 id="first_course">Técnico Mecánico</h4></li>
+                            <li class="academic__courses__item__subtitle" id="highschool_subtitle"><p>2018 - ET N°9 D.E.7 <br>Ing. Luis A. Huergo</p></li>
                         </ul>
                     </div>
                     <div class="academic__courses__box">
                         <ul class="academic__courses__list">
                             <li class="academic__courses__item__img"><img id="utn" src="assets/utn_icon.png"></li>
-                            <li class="academic__courses__item__title"><h4>Ingeniería en Sistemas de Información</h4></li>
-                            <li class="academic__courses__item__subtitle"><p>En curso - UTN.BA</p></li>
+                            <li class="academic__courses__item__title" id="utn_title"><h4>Ingeniería en Sistemas de Información</h4></li>
+                            <li class="academic__courses__item__subtitle" id="utn_subtitle"><p>En curso - UTN.BA</p></li>
                         </ul>
                     </div>
                     <div class="academic__courses__box">
                         <ul class="academic__courses__list">
                             <li class="academic__courses__item__img"><img id="alura" src="assets/alura_logo.png"></li>
-                            <li class="academic__courses__item__title"><h4>Formación Full Stack en Java</h4></li>
-                            <li class="academic__courses__item__subtitle"><p>FEB 2023 - Oracle ONE / Alura</p></li>
+                            <li class="academic__courses__item__title" id="alura_title"><h4>Formación Full Stack en Java</h4></li>
+                            <li class="academic__courses__item__subtitle" id="alura_subtitle"><p>FEB 2023 - Oracle ONE / Alura</p></li>
                         </ul>
                     </div>
                     <div class="academic__courses__box">
                         <ul class="academic__courses__list">
                             <li class="academic__courses__item__img"><img src="assets/platzi.png" width="250"></li>
-                            <li class="academic__courses__item__title"><h4>Desarrollo web y aplicaciones</h4></li>
-                            <li class="academic__courses__item__subtitle"><p>MAY 2023 - Platzi</p></li>
+                            <li class="academic__courses__item__title" id="platzi_title"><h4>Desarrollo web y aplicaciones</h4></li>
+                            <li class="academic__courses__item__subtitle" id="platzi_subtitle"><p>MAY 2023 - Platzi</p></li>
                         </ul>
                     </div>
                     <div class="academic__courses__box">
                         <ul class="academic__courses__list">
                             <li class="academic__courses__item__img"><img src="assets/junior-achievement.png" width="250"></li>
-                            <li class="academic__courses__item__title"><h4>Administración en la Nube (Azure)</h4></li>
-                            <li class="academic__courses__item__subtitle"><p>SEP 2023 - Junior Achievement</p></li>
+                            <li class="academic__courses__item__title" id="junior_title"><h4>Administración en la Nube (Azure)</h4></li>
+                            <li class="academic__courses__item__subtitle" id="junior_subtitle"><p>SEP 2023 - Junior Achievement</p></li>
                         </ul>
                     </div>
                 </div>
@@ -288,7 +291,7 @@
 
         <!-- Sección de Experiencia Profesional/Proyectos-->
         <section class="experience" id="xp">
-            <h2 class="experience__section__title">Experiencia / Proyectos</h2>
+            <h2 class="experience__section__title" id="exp-title">Experiencia / Proyectos</h2>
 
             <div class="experience__box">
                 <div class="experience__img__container">
@@ -296,10 +299,10 @@
                 </div>
                 <div class="experience__info">
                     <h2 class="experience__title">Pokedex</h2>
-                    <h3 class="experience__text">Aplicación desarrollada con React Native (Expo), Redux, TypeScript y Node.js. Se comunica con una API creada con Express para el control de usuarios.</h3>
+                    <h3 class="experience__text" id="pokedex-desc">Aplicación desarrollada con React Native (Expo), Redux, TypeScript y Node.js. Se comunica con una API creada con Express para el control de usuarios.</h3>
                     <div class="experience__description">
-                        <span class="experience__repo"><a href="https://github.com/nicov90/pokedex" target="_blank"><button class="experience__button--repo">Repositorio</button></a></span>
-                        <span class="experience__demo"><a href="./files/Pokedex by Nicolas Valdez.apk" download="Pokedex by Nicolas Valdez"  target="_blank"><button class="experience__button--demo">Descargar APK (Android)</button></a></span>
+                        <span class="experience__repo"><a href="https://github.com/nicov90/pokedex" target="_blank"><button class="experience__button--repo" id="repository">Repositorio</button></a></span>
+                        <span class="experience__demo"><a href="./files/Pokedex by Nicolas Valdez.apk" download="Pokedex by Nicolas Valdez"  target="_blank"><button class="experience__button--demo" id="downloadapk">Descargar APK (Android)</button></a></span>
                     </div>
                 </div>
             </div>  
@@ -309,11 +312,11 @@
                     <div class="experience__img" id="task-list"></div>
                 </div>
                 <div class="experience__info">
-                    <h2 class="experience__title">Lista de tareas</h2>
-                    <h3 class="experience__text">Desarrollado con HTML, CSS, JavaScript y React</h3>
+                    <h2 class="experience__title" id="task-list-title">Lista de tareas</h2>
+                    <h3 class="experience__text" id="task-list-desc">Desarrollado con HTML, CSS, JavaScript y React</h3>
                     <div class="experience__description">
                         <span class="experience__repo"><a href="https://github.com/nicov90/task-list" target="_blank"><button class="experience__button--repo">Repositorio</button></a></span>
-                        <span class="experience__demo"><a href="https://task-list-nicov90.vercel.app/"  target="_blank"><button class="experience__button--demo">Ver demo</button></a></span>
+                        <span class="experience__demo"><a href="https://task-list-nicov90.vercel.app/"  target="_blank"><button class="experience__button--demo" id="seedemo">Ver demo</button></a></span>
                     </div>
                 </div>
             </div>  
@@ -323,8 +326,8 @@
                     <div class="experience__img" id="calculadora-react"></div>
                 </div>
                 <div class="experience__info">
-                    <h2 class="experience__title">Calculadora</h2>
-                    <h3 class="experience__text">Desarrollado con HTML, CSS, JavaScript y React</h3>
+                    <h2 class="experience__title" id="calculadora-title">Calculadora</h2>
+                    <h3 class="experience__text" id="calculadora-desc">Desarrollado con HTML, CSS, JavaScript y React</h3>
                     <div class="experience__description">
                         <span class="experience__repo"><a href="https://github.com/nicov90/calculadora-react" target="_blank"><button class="experience__button--repo">Repositorio</button></a></span>
                         <span class="experience__demo"><a href="https://calculadora-react-nicov90.vercel.app/"  target="_blank"><button class="experience__button--demo">Ver demo</button></a></span>
@@ -337,8 +340,8 @@
                     <div class="experience__img" id="hotel-management-system"></div>
                 </div>
                 <div class="experience__info">
-                    <h2 class="experience__title">Sistema Hotelero: Gestión de Reservas</h2>
-                    <h3 class="experience__text">Desarrollado con Java/Swing y MySQL</h3>
+                    <h2 class="experience__title" id="hotel-title">Sistema Hotelero: Gestión de Reservas</h2>
+                    <h3 class="experience__text" id="hotel-desc">Desarrollado con Java/Swing y MySQL</h3>
                     <div class="experience__description">
                         <span class="experience__repo"><a href="https://github.com/nicov90/Hotel-Booking-System" target="_blank"><button class="experience__button--repo">Repositorio</button></a></span>
                         <span class="experience__demo" title="No disponible, por favor visite el repositorio."><button class="experience__button--demo not-available">Ver demo</button></span>
@@ -351,8 +354,8 @@
                     <div class="experience__img" id="ecommerce"></div>
                 </div>
                 <div class="experience__info">
-                    <h2 class="experience__title">eCommerce - Tienda Virtual</h2>
-                    <h3 class="experience__text">Desarrollado con HTML, CSS, Bootstrap y JavaScript</h3>
+                    <h2 class="experience__title" id="ecommerce-title">eCommerce - Tienda Virtual</h2>
+                    <h3 class="experience__text" id="ecommerce-desc">Desarrollado con HTML, CSS, Bootstrap y JavaScript</h3>
                     <div class="experience__description">
                         <span class="experience__repo"><a href="https://github.com/nicov90/eCommerce" target="_blank"><button class="experience__button--repo">Repositorio</button></a></span>
                         <span class="experience__demo"><a href="https://nicov90.github.io/eCommerce/index.html"  target="_blank"><button class="experience__button--demo">Ver demo</button></a></span>
@@ -365,8 +368,8 @@
                     <div class="experience__img" id="converter"></div>
                 </div>
                 <div class="experience__info">
-                    <h2 class="experience__title">Conversor de Monedas</h2>
-                    <h3 class="experience__text">Desarrollado con Java/Swing y API para actualización diaria de tasas.</h3>
+                    <h2 class="experience__title" id="converter-title">Conversor de Monedas</h2>
+                    <h3 class="experience__text" id="converter-desc">Desarrollado con Java/Swing y API para actualización diaria de tasas.</h3>
                     <div class="experience__description">
                         <span class="experience__repo"><a href="https://github.com/nicov90/currency-converter"  target="_blank"><button class="experience__button--repo">Repositorio</button></a></span>
                         <span class="experience__demo" title="No disponible, por favor visite el repositorio."><button class="experience__button--demo not-available">Ver demo</button></span>
@@ -379,8 +382,8 @@
                     <div class="experience__img" id="hangman"></div>
                 </div>
                 <div class="experience__info">
-                    <h2 class="experience__title">Juego del Ahorcado</h2>
-                    <h3 class="experience__text">Desarrollado con HTML, CSS y JavaScript</h3>
+                    <h2 class="experience__title" id="hangman-title">Juego del Ahorcado</h2>
+                    <h3 class="experience__text" id="hangman-desc">Desarrollado con HTML, CSS y JavaScript</h3>
                     <div class="experience__description">
                         <span class="experience__repo"><a href="https://github.com/nicov90/Hangman"  target="_blank"><button class="experience__button--repo">Repositorio</button></a></span>
                         <span class="experience__demo"><a href="https://nicov90.github.io/Hangman/"  target="_blank"><button class="experience__button--demo">Ver demo</button></a></span>
@@ -393,8 +396,8 @@
                     <div class="experience__img" id="encryptor"></div>
                 </div>
                 <div class="experience__info">
-                    <h2 class="experience__title">Encriptador de texto</h2>
-                    <h3 class="experience__text">Desarrollado con HTML, CSS y JavaScript</h3>
+                    <h2 class="experience__title" id="encryptor-title">Encriptador de texto</h2>
+                    <h3 class="experience__text" id="encryptor-desc">Desarrollado con HTML, CSS y JavaScript</h3>
                     <div class="experience__description">
                         <span class="experience__repo"><a href="https://github.com/nicov90/Encryptor"  target="_blank"><button class="experience__button--repo">Repositorio</button></a></span>
                         <span class="experience__demo"><a href="https://nicov90.github.io/Encryptor/"  target="_blank"><button class="experience__button--demo">Ver demo</button></a></span>
@@ -405,11 +408,11 @@
     </div>
     <section class="contact">
         <div class="contact_container">
-            <p>Contáctame!</p>
-            <p>Intentaré responder lo antes posible.</p>
+            <p id="contact_title">¡Contáctame!</p>
+            <p id="contact_paragraph">Intentaré responder lo antes posible.</p>
             <a href="mailto: nico_v99@hotmail.com">
                 <button class="contact_btn">
-                    Contacto
+                    <p id="contact_btn">Contacto</p>
                     <img src="./assets/mail_icon.png" alt="Send" class="button_img">
                 </button>
             </a>
