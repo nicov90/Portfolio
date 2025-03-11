@@ -43,5 +43,11 @@
   "contact_paragraph": "Intentaré responder lo antes posible.",
   "contact_btn": "Contacto",
   "made_by": "Hecho por Nicolás Valdez",
-  "year": "2022"
+  "year": "2022",
+
+  "xp-section-title": "Experiencia Profesional",
+  "xp_title": "Desarrollador Full Stack",
+  "xp_company": "Grupo Tepsi | 07/2023 - Actualidad",
+  "xp_description": "Encargado del desarrollo de aplicaciones internas con una arquitectura orientada a microservicios, enfocadas en la gestión y automatización de procesos administrativos. He implementado sistemas de autenticación, cifrado de contraseñas, formularios, roles, rutas protegidas, tablas paginadas, envío de correos y generación de PDF entre otros.",
+  "xp_projects_title": "Proyectos destacados"
   }

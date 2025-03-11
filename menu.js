@@ -104,6 +104,12 @@ function changeLanguage() {
       translateText('contact_paragraph', 'contact_paragraph');
       translateText('contact_btn', 'contact_btn');
       translateText('made-by', 'made_by');
+
+      translateText('xp-section-title', 'xp-section-title');
+      translateText('xp_title', 'xp_title');
+      translateText('xp_company', 'xp_company');
+      translateText('xp_description', 'xp_description');
+      translateText('xp_projects_title', 'xp_projects_title');
     })
     .catch(error => {
       console.error('Error al cargar las traducciones:', error);

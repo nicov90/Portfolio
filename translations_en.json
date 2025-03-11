@@ -43,5 +43,11 @@
   "contact_paragraph": "I will try to respond as soon as possible.",
   "contact_btn": "Contact",
   "made_by": "Made by Nicolas Valdez",
-  "year": "2022"
+  "year": "2022",
+
+  "xp-section-title": "Professional Experience",
+  "xp_title": "Full Stack Developer",
+  "xp_company": "Grupo Tepsi | 07/2023 - Today",
+  "xp_description": "Developed internal applications with a microservices-oriented architecture, focused on managing and automating administrative processes. Implemented authentication, password encryption, forms, roles, protected routes, paginated tables, email sending, and PDF generation, among others.",
+  "xp_projects_title": "Highlighted projects"
 }
