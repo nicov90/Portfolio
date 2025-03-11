@@ -21,7 +21,7 @@
   "alura_title": "Formación Full Stack Java",
   "platzi_title": "Desarrollo web y aplicaciones",
   "junior_title": "Administración en la Nube (Azure)",
-  "exp-title": "Experiencia / Proyectos",
+  "exp-title": "Proyectos",
   "pokedex-desc": "Aplicación desarrollada con React Native (Expo), Redux, TypeScript y Node.js. Se comunica con una API creada con Express para el control de usuarios.",
   "task-list-title": "Lista de tareas",
   "task-list-desc": "Desarrollada con HTML, CSS, JavaScript y React",
